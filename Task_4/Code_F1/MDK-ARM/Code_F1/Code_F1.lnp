@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"code_f1\startup_stm32f103xb.o"
+"code_f1\main.o"
+"code_f1\gpio.o"
+"code_f1\i2c.o"
+"code_f1\tim.o"
+"code_f1\stm32f1xx_it.o"
+"code_f1\stm32f1xx_hal_msp.o"
+"code_f1\stm32f1xx_hal_gpio_ex.o"
+"code_f1\stm32f1xx_hal_i2c.o"
+"code_f1\stm32f1xx_hal.o"
+"code_f1\stm32f1xx_hal_rcc.o"
+"code_f1\stm32f1xx_hal_rcc_ex.o"
+"code_f1\stm32f1xx_hal_gpio.o"
+"code_f1\stm32f1xx_hal_dma.o"
+"code_f1\stm32f1xx_hal_cortex.o"
+"code_f1\stm32f1xx_hal_pwr.o"
+"code_f1\stm32f1xx_hal_flash.o"
+"code_f1\stm32f1xx_hal_flash_ex.o"
+"code_f1\stm32f1xx_hal_exti.o"
+"code_f1\stm32f1xx_hal_tim.o"
+"code_f1\stm32f1xx_hal_tim_ex.o"
+"code_f1\system_stm32f1xx.o"
+"code_f1\cld_i2c.o"
+--strict --scatter "Code_F1\Code_F1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Code_F1.map" -o Code_F1\Code_F1.axf
