@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "138112508283",
+    "project_id": "home-automation-b3c55",
+    "storage_bucket": "home-automation-b3c55.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138112508283:android:846412b24bf1d745269dde",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138112508283-vpbdmcn1bumil3epjilcrb17l2tl6g4l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9K7f6F1fSUBfGchPve_hy1iN7FBAANQU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "138112508283-vpbdmcn1bumil3epjilcrb17l2tl6g4l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
