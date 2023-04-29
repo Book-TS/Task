@@ -32,6 +32,7 @@ public class Login_Activity extends AppCompatActivity {
     private final DatabaseReference mData = FirebaseDatabase.getInstance().getReference();
     private Account account_1;
     private String childTxt;
+    Intent intent_Service;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -105,6 +106,9 @@ public class Login_Activity extends AppCompatActivity {
                             read_Name();
                             account_1 = new Account(email1, pass1, 1);
                             mData.child(childTxt + "/Account").setValue(account_1);
+
+                            intent_Service = new Intent(getApplicationContext(), MyService.class);
+                            startService(intent_Service);
                         } else {
                             Toast.makeText(Login_Activity.this, "Tên tài khoản hoặc mật khẩu không chính xác", Toast.LENGTH_SHORT).show();
                         }

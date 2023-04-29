@@ -1,10 +1,13 @@
 package com.example.app.Main;
 
+import android.annotation.SuppressLint;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -25,7 +28,7 @@ import com.google.firebase.database.ValueEventListener;
 
 public class Fragment_Home extends Fragment {
     private View fm_home;
-    private TextView timeUpdate, speedVal, phVal, TDSVal, totalVal;
+    private TextView timeUpdate, speedVal, phVal, TDSVal, totalVal, txtAlarm;
     private final DatabaseReference mData = FirebaseDatabase.getInstance().getReference();
     private String device;
 
@@ -47,15 +50,34 @@ public class Fragment_Home extends Fragment {
         phVal = fm_home.findViewById(R.id.phVal);
         TDSVal = fm_home.findViewById(R.id.TDSVal);
         totalVal = fm_home.findViewById(R.id.totalVal);
+        txtAlarm = fm_home.findViewById(R.id.txt_Alarm);
     }
 
     // Đọc dữ liệu
     private void realTimeData() {
         mData.child(device + "/Present").addValueEventListener(new ValueEventListener() {
+            @SuppressLint("ResourceAsColor")
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 Value val = snapshot.getValue(Value.class);
                 if(val != null) {
+                    if (val.ph < 6.5) {
+                        txtAlarm.setText("PH thấp quá ngưỡng cho phép");
+                        txtAlarm.setTextColor(Color.RED);
+                    }
+                    else if (val.ph > 8) {
+                        txtAlarm.setText("PH cao quá ngưỡng cho phép");
+                        txtAlarm.setTextColor(Color.RED);
+                    }
+                    else if (val.tds > 500) {
+                        txtAlarm.setText("Nước ô nhiễm");
+                        txtAlarm.setTextColor(Color.RED);
+                    }
+                    else {
+                        txtAlarm.setText("Bình thường");
+                        txtAlarm.setTextColor(Color.rgb(0, 143, 0));
+                    }
+
                     speedVal.setText(String.valueOf((double) Math.floor(val.speed * 100) / 100) + " lít/phút");
                     phVal.setText(String.valueOf((double) Math.floor(val.ph * 100) / 100));
                     TDSVal.setText(String.valueOf((double) Math.floor(val.tds * 100) / 100) + " ppm");

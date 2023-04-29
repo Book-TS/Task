@@ -24,6 +24,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.app.Account;
 import com.example.app.Login.Login_Activity;
+import com.example.app.Login.MyService;
 import com.example.app.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -48,6 +49,7 @@ public class Fragment_Account extends Fragment {
     private EditText txt_pass_4, txt_pass_5, txt_pass_6;
     private TextView email_txt;
     private String device;
+    Intent intent_Service;
 
     @Nullable
     @Override
@@ -88,6 +90,8 @@ public class Fragment_Account extends Fragment {
                     Toast.makeText(getActivity(), "Đăng xuất thành công", Toast.LENGTH_SHORT).show();
                     Intent intent2 = new Intent(getActivity(), Login_Activity.class);
                     startActivity(intent2);
+                    intent_Service = new Intent(getActivity(), MyService.class);
+                    getActivity().stopService(intent_Service);
                     break;
             }
         });
