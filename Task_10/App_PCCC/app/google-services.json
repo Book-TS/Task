@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "211794855066",
+    "firebase_url": "https://do-an-tot-nghiep-63f46-default-rtdb.firebaseio.com",
+    "project_id": "do-an-tot-nghiep-63f46",
+    "storage_bucket": "do-an-tot-nghiep-63f46.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:211794855066:android:7d1a2433a068add4534b23",
+        "android_client_info": {
+          "package_name": "com.example.app_pccc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "211794855066-1ntoiq73rtsd32hpon0677a2s94gukt8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaioMk0KaAXEksFRMujNMOEkkiCgsD9oo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "211794855066-1ntoiq73rtsd32hpon0677a2s94gukt8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

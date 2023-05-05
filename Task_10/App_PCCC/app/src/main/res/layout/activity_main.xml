@@ -1,9 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar_1"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_1"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="#01635A"
+            android:elevation="4dp"
+            app:title="APP PCCC"
+            app:titleTextColor="@color/white" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:text="SVTH:"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:id="@+id/text_svth"
+        android:layout_below="@id/appBar_1"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appBar_1"
+        android:padding="10dp"
+        android:id="@+id/sv1"
+        android:layout_toEndOf="@+id/text_svth"
+        android:text="Tăng Văn Thiều"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sv1"
+        android:padding="10dp"
+        android:id="@+id/sv2"
+        android:layout_toEndOf="@+id/text_svth"
+        android:text="Trần Quốc Tuấn"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:text="GVHD:"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:id="@+id/text_gvhd"
+        android:layout_below="@id/sv2"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sv2"
+        android:padding="10dp"
+        android:id="@+id/gv"
+        android:layout_toEndOf="@+id/text_gvhd"
+        android:text="Lê Long Hải"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bình thường"
+        android:id="@+id/text_alarm"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/text_gvhd"
+        android:textColor="#01635A"
+        android:textSize="25sp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/image_bell"
+        android:layout_below="@id/text_alarm"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/bell_ring_1" />
+
+    <ImageView
+        android:id="@+id/image_light"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/image_bell"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/alarm_1"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
