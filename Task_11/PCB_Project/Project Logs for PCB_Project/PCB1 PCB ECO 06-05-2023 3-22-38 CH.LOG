@@ -1,0 +1,267 @@
+Added Component: Designator=BT(BAT_BK-18650-PC6)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "MPD"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "BK-18650-PC6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/BK-18650-PC6/MPD/view-part/4480464/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C1(CAP_CER_105)
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C2(CAP_CER_105)
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C3(CAP_CER_105)
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D1(DO-41)
+Add component (AddParameter): Name = "Category"; Value = "Rectifier Diodes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/26325/162272-da-01-ml-1n4007-silizium-diode-de-en-26325271.pdf?src-supplier=Conrad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/26325/162272-da-01-ml-1n4007-silizium-diode-de-en-26325271.pdf?src-supplier=Conrad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/48433/1n400x-eng-tds-48433165.pdf?src-supplier=Distrelec"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/48433/1n400x-eng-tds-48433165.pdf?src-supplier=Distrelec"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Element Configuration"; Value = "Single"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Voltage"; Value = "1V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Diotec"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "1N4007"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "175°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Surge Current"; Value = "27A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-50°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Ammo Pack"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Peak Non-Repetitive Surge Current"; Value = "30A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Polarity"; Value = "Standard"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing"; Value = "1=0,40000, 10=0,13200, 50=0,13200, 100=0,09500, 500=0,06900, 1000=0,06600, 2500=0,06100, 5000=0,05200, 10000=0,04700 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock"; Value = "171929"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number"; Value = "637-1N4007"; VariantName = "[No Variations]"
+Added Component: Designator=D2(DO-41)
+Add component (AddParameter): Name = "Category"; Value = "Rectifier Diodes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "https://datasheet.ciiva.com/26325/162272-da-01-ml-1n4007-silizium-diode-de-en-26325271.pdf?src-supplier=Conrad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://datasheet.ciiva.com/26325/162272-da-01-ml-1n4007-silizium-diode-de-en-26325271.pdf?src-supplier=Conrad"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "https://datasheet.ciiva.com/48433/1n400x-eng-tds-48433165.pdf?src-supplier=Distrelec"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "https://datasheet.ciiva.com/48433/1n400x-eng-tds-48433165.pdf?src-supplier=Distrelec"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Element Configuration"; Value = "Single"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Forward Voltage"; Value = "1V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Diotec"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "1N4007"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "175°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Surge Current"; Value = "27A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-50°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "Through Hole"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Ammo Pack"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Peak Non-Repetitive Surge Current"; Value = "30A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Polarity"; Value = "Standard"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing"; Value = "1=0,40000, 10=0,13200, 50=0,13200, 100=0,09500, 500=0,06900, 1000=0,06600, 2500=0,06100, 5000=0,05200, 10000=0,04700 (USD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "Yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock"; Value = "171929"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number"; Value = "637-1N4007"; VariantName = "[No Variations]"
+Added Component: Designator=L1(LED-5-RED)
+Added Component: Designator=L2(LED-5-RED)
+Added Component: Designator=P1(CON2)
+Added Component: Designator=P2(CON2)
+Added Component: Designator=P3(CON3)
+Added Component: Designator=P4(CON4)
+Added Component: Designator=P5(CON4)
+Added Component: Designator=P6(CON3)
+Added Component: Designator=P7(CON4)
+Added Component: Designator=P8(CON4)
+Added Component: Designator=P9(DOMINO_2)
+Added Component: Designator=P10(DOMINO_2)
+Added Component: Designator=Q1(QTO-92)
+Add component (AddParameter): Name = "Value"; Value = "C1815"; VariantName = "[No Variations]"
+Added Component: Designator=Q2(QTO-92)
+Add component (AddParameter): Name = "Value"; Value = "C1815"; VariantName = "[No Variations]"
+Added Component: Designator=R1(R1/4W)
+Add component (AddParameter): Name = "Value"; Value = "4K7"; VariantName = "[No Variations]"
+Added Component: Designator=R2(R1/4W)
+Add component (AddParameter): Name = "Value"; Value = "470"; VariantName = "[No Variations]"
+Added Component: Designator=R3(R1/4W)
+Add component (AddParameter): Name = "Value"; Value = "330"; VariantName = "[No Variations]"
+Added Component: Designator=R4(R1/4W)
+Add component (AddParameter): Name = "Value"; Value = "330"; VariantName = "[No Variations]"
+Added Component: Designator=R5(R1/4W)
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=R6(R1/4W)
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=R7(R1/4W)
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Added Component: Designator=R8(R1/4W)
+Add component (AddParameter): Name = "Value"; Value = "330"; VariantName = "[No Variations]"
+Added Component: Designator=R9(R1/4W)
+Add component (AddParameter): Name = "Value"; Value = "1k"; VariantName = "[No Variations]"
+Added Component: Designator=R10(R1/4W)
+Add component (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Added Component: Designator=R11(R1/4W)
+Add component (AddParameter): Name = "Value"; Value = "470"; VariantName = "[No Variations]"
+Added Component: Designator=R12(R1/4W)
+Add component (AddParameter): Name = "Value"; Value = "330"; VariantName = "[No Variations]"
+Added Component: Designator=R13(R1/4W)
+Add component (AddParameter): Name = "Value"; Value = "1k"; VariantName = "[No Variations]"
+Added Component: Designator=R14(R1/4W)
+Add component (AddParameter): Name = "Value"; Value = "10k"; VariantName = "[No Variations]"
+Added Component: Designator=R15(R1/4W)
+Add component (AddParameter): Name = "Value"; Value = "470"; VariantName = "[No Variations]"
+Added Component: Designator=RL1(SRD-05VDC-SL-C)
+Added Component: Designator=RL2(SRD-05VDC-SL-C)
+Added Component: Designator=U1(ESP32_Goouuu)
+Added Component: Designator=U2(DFR0559)
+Added Component: Designator=U3(PC817-DIP4)
+Add component (AddParameter): Name = "Value"; Value = "PC817"; VariantName = "[No Variations]"
+Added Component: Designator=U4(PC817-DIP4)
+Add component (AddParameter): Name = "Value"; Value = "PC817"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=BT_RES Pin=C1-2
+Added Pin To Net: NetName=BT_RES Pin=P4-1
+Added Pin To Net: NetName=BT_RES Pin=R5-2
+Added Pin To Net: NetName=BT_RES Pin=U1-2
+Added Net: Name=BT_RES
+Added Pin To Net: NetName=BT_TEMP Pin=C2-2
+Added Pin To Net: NetName=BT_TEMP Pin=P4-2
+Added Pin To Net: NetName=BT_TEMP Pin=R6-2
+Added Pin To Net: NetName=BT_TEMP Pin=U1-31
+Added Net: Name=BT_TEMP
+Added Pin To Net: NetName=BT_WL Pin=C3-2
+Added Pin To Net: NetName=BT_WL Pin=P4-3
+Added Pin To Net: NetName=BT_WL Pin=R7-2
+Added Pin To Net: NetName=BT_WL Pin=U1-30
+Added Net: Name=BT_WL
+Added Pin To Net: NetName=data_DS Pin=P6-2
+Added Pin To Net: NetName=data_DS Pin=R1-1
+Added Pin To Net: NetName=data_DS Pin=U1-26
+Added Net: Name=data_DS
+Added Pin To Net: NetName=DC5V Pin=D1-1
+Added Pin To Net: NetName=DC5V Pin=D2-1
+Added Pin To Net: NetName=DC5V Pin=P3-2
+Added Pin To Net: NetName=DC5V Pin=P5-1
+Added Pin To Net: NetName=DC5V Pin=P6-1
+Added Pin To Net: NetName=DC5V Pin=P8-2
+Added Pin To Net: NetName=DC5V Pin=R1-2
+Added Pin To Net: NetName=DC5V Pin=R2-2
+Added Pin To Net: NetName=DC5V Pin=R5-1
+Added Pin To Net: NetName=DC5V Pin=R6-1
+Added Pin To Net: NetName=DC5V Pin=R7-1
+Added Pin To Net: NetName=DC5V Pin=R11-2
+Added Pin To Net: NetName=DC5V Pin=R15-2
+Added Pin To Net: NetName=DC5V Pin=RL1-1
+Added Pin To Net: NetName=DC5V Pin=RL2-1
+Added Pin To Net: NetName=DC5V Pin=U1-19
+Added Pin To Net: NetName=DC5V Pin=U3-4
+Added Pin To Net: NetName=DC5V Pin=U4-4
+Added Net: Name=DC5V
+Added Pin To Net: NetName=Echo Pin=P5-3
+Added Pin To Net: NetName=Echo Pin=U1-27
+Added Net: Name=Echo
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=GND Pin=P2-2
+Added Pin To Net: NetName=GND Pin=P3-3
+Added Pin To Net: NetName=GND Pin=P4-4
+Added Pin To Net: NetName=GND Pin=P5-4
+Added Pin To Net: NetName=GND Pin=P6-3
+Added Pin To Net: NetName=GND Pin=P7-4
+Added Pin To Net: NetName=GND Pin=P8-1
+Added Pin To Net: NetName=GND Pin=Q1-1
+Added Pin To Net: NetName=GND Pin=Q2-1
+Added Pin To Net: NetName=GND Pin=R10-1
+Added Pin To Net: NetName=GND Pin=R14-1
+Added Pin To Net: NetName=GND Pin=U1-38
+Added Pin To Net: NetName=GND Pin=U3-2
+Added Pin To Net: NetName=GND Pin=U4-2
+Added Net: Name=GND
+Added Pin To Net: NetName=LED_CON Pin=R3-2
+Added Pin To Net: NetName=LED_CON Pin=U1-11
+Added Net: Name=LED_CON
+Added Pin To Net: NetName=LED_STA Pin=R4-2
+Added Pin To Net: NetName=LED_STA Pin=U1-10
+Added Net: Name=LED_STA
+Added Pin To Net: NetName=NetD1_2 Pin=D1-2
+Added Pin To Net: NetName=NetD1_2 Pin=L2-2
+Added Pin To Net: NetName=NetD1_2 Pin=Q1-2
+Added Pin To Net: NetName=NetD1_2 Pin=RL2-2
+Added Net: Name=NetD1_2
+Added Pin To Net: NetName=NetD2_2 Pin=D2-2
+Added Pin To Net: NetName=NetD2_2 Pin=L1-2
+Added Pin To Net: NetName=NetD2_2 Pin=Q2-2
+Added Pin To Net: NetName=NetD2_2 Pin=RL1-2
+Added Net: Name=NetD2_2
+Added Pin To Net: NetName=NetL1_1 Pin=L1-1
+Added Pin To Net: NetName=NetL1_1 Pin=R15-1
+Added Net: Name=NetL1_1
+Added Pin To Net: NetName=NetL2_1 Pin=L2-1
+Added Pin To Net: NetName=NetL2_1 Pin=R11-1
+Added Net: Name=NetL2_1
+Added Pin To Net: NetName=NetP7_1 Pin=P7-1
+Added Pin To Net: NetName=NetP7_1 Pin=R2-1
+Added Net: Name=NetP7_1
+Added Pin To Net: NetName=NetP7_2 Pin=P7-2
+Added Pin To Net: NetName=NetP7_2 Pin=R3-1
+Added Net: Name=NetP7_2
+Added Pin To Net: NetName=NetP7_3 Pin=P7-3
+Added Pin To Net: NetName=NetP7_3 Pin=R4-1
+Added Net: Name=NetP7_3
+Added Pin To Net: NetName=NetP9_1 Pin=P9-1
+Added Pin To Net: NetName=NetP9_1 Pin=RL2-3
+Added Net: Name=NetP9_1
+Added Pin To Net: NetName=NetP9_2 Pin=P9-2
+Added Pin To Net: NetName=NetP9_2 Pin=RL2-5
+Added Net: Name=NetP9_2
+Added Pin To Net: NetName=NetP10_1 Pin=P10-1
+Added Pin To Net: NetName=NetP10_1 Pin=RL1-3
+Added Net: Name=NetP10_1
+Added Pin To Net: NetName=NetP10_2 Pin=P10-2
+Added Pin To Net: NetName=NetP10_2 Pin=RL1-5
+Added Net: Name=NetP10_2
+Added Pin To Net: NetName=NetQ1_3 Pin=Q1-3
+Added Pin To Net: NetName=NetQ1_3 Pin=R9-2
+Added Pin To Net: NetName=NetQ1_3 Pin=R10-2
+Added Net: Name=NetQ1_3
+Added Pin To Net: NetName=NetQ2_3 Pin=Q2-3
+Added Pin To Net: NetName=NetQ2_3 Pin=R13-2
+Added Pin To Net: NetName=NetQ2_3 Pin=R14-2
+Added Net: Name=NetQ2_3
+Added Pin To Net: NetName=NetR8_2 Pin=R8-2
+Added Pin To Net: NetName=NetR8_2 Pin=U3-1
+Added Net: Name=NetR8_2
+Added Pin To Net: NetName=NetR9_1 Pin=R9-1
+Added Pin To Net: NetName=NetR9_1 Pin=U3-3
+Added Net: Name=NetR9_1
+Added Pin To Net: NetName=NetR12_2 Pin=R12-2
+Added Pin To Net: NetName=NetR12_2 Pin=U4-1
+Added Net: Name=NetR12_2
+Added Pin To Net: NetName=NetR13_1 Pin=R13-1
+Added Pin To Net: NetName=NetR13_1 Pin=U4-3
+Added Net: Name=NetR13_1
+Added Pin To Net: NetName=OUT+ Pin=BT-1+
+Added Pin To Net: NetName=OUT+ Pin=BT-2+
+Added Pin To Net: NetName=OUT+ Pin=BT-3+
+Added Pin To Net: NetName=OUT+ Pin=P1-1
+Added Net: Name=OUT+
+Added Pin To Net: NetName=OUT- Pin=BT-1-
+Added Pin To Net: NetName=OUT- Pin=BT-2-
+Added Pin To Net: NetName=OUT- Pin=BT-3-
+Added Pin To Net: NetName=OUT- Pin=P1-2
+Added Net: Name=OUT-
+Added Pin To Net: NetName=RELAY_1 Pin=R8-1
+Added Pin To Net: NetName=RELAY_1 Pin=U1-12
+Added Net: Name=RELAY_1
+Added Pin To Net: NetName=RELAY_2 Pin=R12-1
+Added Pin To Net: NetName=RELAY_2 Pin=U1-13
+Added Net: Name=RELAY_2
+Added Pin To Net: NetName=SCL Pin=P8-4
+Added Pin To Net: NetName=SCL Pin=U1-36
+Added Net: Name=SCL
+Added Pin To Net: NetName=SDA Pin=P8-3
+Added Pin To Net: NetName=SDA Pin=U1-33
+Added Net: Name=SDA
+Added Pin To Net: NetName=Trig Pin=P5-2
+Added Pin To Net: NetName=Trig Pin=U1-28
+Added Net: Name=Trig
+Added Pin To Net: NetName=VCC Pin=P2-1
+Added Pin To Net: NetName=VCC Pin=P3-1
+Added Net: Name=VCC
+Added Class: Name=Sheet1

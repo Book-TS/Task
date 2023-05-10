@@ -1,10 +1,10 @@
 package com.example.app_pccc;
 
+import android.annotation.SuppressLint;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.Service;
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Build;
 import android.os.IBinder;
 
@@ -12,13 +12,14 @@ import androidx.annotation.NonNull;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
-import com.daimajia.androidanimations.library.Techniques;
-import com.daimajia.androidanimations.library.YoYo;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 public class MyService extends Service {
 
@@ -55,9 +56,19 @@ public class MyService extends Service {
                     status_1 = true;
                     if((status_2)||(status_3)) {
                         sendNotification_3();
+                        @SuppressLint("SimpleDateFormat") SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+                        String currentDateandTime = sdf.format(new Date());
+
+                        History_Data history_data = new History_Data("Cảnh báo cháy","Báo động có cháy", currentDateandTime);
+                        mData.child("Alarm_History").push().setValue(history_data);
                     }
                     else {
                         sendNotification_1();
+                        @SuppressLint("SimpleDateFormat") SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+                        String currentDateandTime = sdf.format(new Date());
+
+                        History_Data history_data = new History_Data("Cảnh báo khói","Cảnh báo phát hiện khói", currentDateandTime);
+                        mData.child("Alarm_History").push().setValue(history_data);
                     }
 
                     mData.child("trang thai den").setValue("on");
@@ -87,9 +98,19 @@ public class MyService extends Service {
 
                     if((status_1)||(status_3)) {
                         sendNotification_3();
+                        @SuppressLint("SimpleDateFormat") SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+                        String currentDateandTime = sdf.format(new Date());
+
+                        History_Data history_data = new History_Data("Cảnh báo cháy","Báo động có cháy", currentDateandTime);
+                        mData.child("Alarm_History").push().setValue(history_data);
                     }
                     else {
                         sendNotification_2();
+                        @SuppressLint("SimpleDateFormat") SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+                        String currentDateandTime = sdf.format(new Date());
+
+                        History_Data history_data = new History_Data("Cảnh báo nhiệt","Cảnh báo phát hiện lửa", currentDateandTime);
+                        mData.child("Alarm_History").push().setValue(history_data);
                     }
 
                     mData.child("trang thai den").setValue("on");
@@ -116,7 +137,23 @@ public class MyService extends Service {
                 val_3 = snapshot.getValue().toString();
                 if(val_3.equals("on")) {
                     status_3 = true;
-                    sendNotification_3();
+                    if((status_1)&&(status_2)) {
+                        sendNotification_3();
+                        @SuppressLint("SimpleDateFormat") SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+                        String currentDateandTime = sdf.format(new Date());
+
+                        History_Data history_data = new History_Data("Cảnh báo cháy","Báo động có cháy", currentDateandTime);
+                        mData.child("Alarm_History").push().setValue(history_data);
+                    }
+                    else {
+                        sendNotification_4();
+                        @SuppressLint("SimpleDateFormat") SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
+                        String currentDateandTime = sdf.format(new Date());
+
+                        History_Data history_data = new History_Data("Cảnh báo nhấn nút","Có người nhấn nút báo động", currentDateandTime);
+                        mData.child("Alarm_History").push().setValue(history_data);
+                    }
+
                     mData.child("trang thai den").setValue("on");
                     mData.child("trang thai chuong").setValue("on");
                 }
@@ -166,11 +203,21 @@ public class MyService extends Service {
         NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(getApplication(), CHANNEL_ID);
         mBuilder.setSmallIcon(R.drawable.warning);
         mBuilder.setContentTitle("Cảnh báo cháy");
-        mBuilder.setContentText("Cảnh báo có cháy");
+        mBuilder.setContentText("Báo động có cháy");
         mBuilder.setPriority(NotificationCompat.PRIORITY_DEFAULT);
 
         NotificationManagerCompat managerCompat = NotificationManagerCompat.from(getApplication());
         managerCompat.notify(3, mBuilder.build());
+    }
+    private void sendNotification_4() {
+        NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(getApplication(), CHANNEL_ID);
+        mBuilder.setSmallIcon(R.drawable.warning);
+        mBuilder.setContentTitle("Cảnh báo nhấn nút");
+        mBuilder.setContentText("Có người nhấn nút báo động");
+        mBuilder.setPriority(NotificationCompat.PRIORITY_DEFAULT);
+
+        NotificationManagerCompat managerCompat = NotificationManagerCompat.from(getApplication());
+        managerCompat.notify(4, mBuilder.build());
     }
 
     @Override

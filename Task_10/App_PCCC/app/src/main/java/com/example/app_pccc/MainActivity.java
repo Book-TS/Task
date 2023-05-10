@@ -7,6 +7,7 @@ import androidx.appcompat.widget.Toolbar;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView textAlarm;
     private ImageView imageBell;
     private ImageView imageLight;
+    private ImageView imageHistory;
     private String val_1, val_2, val_3;
     private boolean status_1 = false;
     private boolean status_2 = false;
@@ -41,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         textAlarm = findViewById(R.id.text_alarm);
         imageBell = findViewById(R.id.image_bell);
         imageLight = findViewById(R.id.image_light);
+        imageHistory = findViewById(R.id.image_notification);
 
         Intent intent_Service = new Intent(MainActivity.this, MyService.class);
         startService(intent_Service);
@@ -148,8 +151,16 @@ public class MainActivity extends AppCompatActivity {
                 val_3 = snapshot.getValue().toString();
                 if(val_3.equals("on")) {
                     status_3 = true;
-                    textAlarm.setText("Cảnh báo có cháy");
-                    textAlarm.setTextColor(Color.RED);
+
+                    if((status_1)&&(status_2)) {
+                        textAlarm.setText("Cảnh báo có cháy");
+                        textAlarm.setTextColor(Color.RED);
+                    }
+                    else {
+                        textAlarm.setText("Cảnh báo người nhấn nút");
+                        textAlarm.setTextColor(Color.RED);
+                    }
+
                     imageLight.setImageResource(R.drawable.alarm_2);
                     mData.child("trang thai den").setValue("on");
                     imageBell.setImageResource(R.drawable.bell_ring_2);
@@ -180,6 +191,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 
+            }
+        });
+
+        imageHistory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, HistoryActivity.class);
+                startActivity(intent);
             }
         });
     }

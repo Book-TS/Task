@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=NetP9_2 Pin=P9-1
+Removed Pin From Net: NetName=NetP9_1 Pin=P9-2
+Removed Pin From Net: NetName=NetP10_2 Pin=P10-1
+Removed Pin From Net: NetName=NetP10_1 Pin=P10-2
+Removed Pin From Net: NetName=Trig Pin=U1-27
+Removed Pin From Net: NetName=Echo Pin=U1-28
+Removed Pin From Net: NetName=BT_WL Pin=U1-30
+Removed Pin From Net: NetName=BT_TEMP Pin=U1-31
+Removed Pin From Net: NetName=GND Pin=U1-32
+Added Pin To Net: NetName=NetP9_1 Pin=P9-1
+Added Pin To Net: NetName=NetP9_2 Pin=P9-2
+Added Pin To Net: NetName=NetP10_1 Pin=P10-1
+Added Pin To Net: NetName=NetP10_2 Pin=P10-2
+Added Pin To Net: NetName=Echo Pin=U1-6
+Added Pin To Net: NetName=Trig Pin=U1-7
+Added Pin To Net: NetName=BT_WL Pin=U1-8
+Added Pin To Net: NetName=BT_TEMP Pin=U1-9
+Added Member To Class: ClassName=Sheet1 Member=Component RL2 SRD-05VDC-SL-C
+Added Member To Class: ClassName=Sheet1 Member=Component U3 PC817

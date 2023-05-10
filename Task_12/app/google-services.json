@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "959982910376",
+    "firebase_url": "https://dulieusuckhoeiot-default-rtdb.firebaseio.com",
+    "project_id": "dulieusuckhoeiot",
+    "storage_bucket": "dulieusuckhoeiot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959982910376:android:f026125bdc59bb4b51bb9d",
+        "android_client_info": {
+          "package_name": "com.example.app_sk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "959982910376-4rftg1ieq57d5uo4qfphfh4urmhao8ri.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKICLct2pdvYOOzTKaH_EDWICcu_WNBXs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "959982910376-4rftg1ieq57d5uo4qfphfh4urmhao8ri.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
