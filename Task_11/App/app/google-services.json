@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "659820300455",
+    "firebase_url": "https://iot-ho-ca-default-rtdb.firebaseio.com",
+    "project_id": "iot-ho-ca",
+    "storage_bucket": "iot-ho-ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659820300455:android:6661eb482ed3a9031f7382",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "659820300455-q97vsqb0bp72vuio6174vlretg4cpm54.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_18r4bi9kVdlyCxJAIvC-UI6zmFYh-Gk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "659820300455-q97vsqb0bp72vuio6174vlretg4cpm54.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="Thông số sức khoẻ"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Thời gian cập nhật: 23:41 - 11/05/2023"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <com.github.lzyzsd.circleprogress.ArcProgress
+        android:id="@+id/arc1"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_below="@id/text_time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        app:arc_angle="240"
+        app:arc_bottom_text="Nhịp tim"
+        app:arc_bottom_text_size="30dp"
+        app:arc_finished_color="@color/color_1"
+        app:arc_max="200"
+        app:arc_progress="20"
+        app:arc_stroke_width="25dp"
+        app:arc_suffix_text=" Bpm"
+        app:arc_suffix_text_size="20dp"
+        app:arc_text_color="@color/color_1"
+        app:arc_text_size="40sp"
+        app:arc_unfinished_color="@color/gray"
+        tools:ignore="MissingClass" />
+
+    <com.github.lzyzsd.circleprogress.ArcProgress
+        android:id="@+id/arc2"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_below="@id/arc1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:arc_angle="240"
+        app:arc_bottom_text="SPO2"
+        app:arc_bottom_text_size="30sp"
+        app:arc_finished_color="@color/color_2"
+        app:arc_max="100"
+        app:arc_progress="20"
+        app:arc_stroke_width="25dp"
+        app:arc_suffix_text="%"
+        app:arc_suffix_text_size="30sp"
+        app:arc_text_color="@color/color_2"
+        app:arc_text_size="40sp"
+        app:arc_unfinished_color="@color/gray" />
+
+</RelativeLayout>
