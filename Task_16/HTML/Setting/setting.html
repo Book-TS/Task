@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cài đặt</title>
+    <link rel="stylesheet" href="../Setting/setting.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+  </head>
+  <body>
+    <div class="layout_1">
+      <!-- Thanh menu dọc -->
+      <div class="sidebar">
+        <ul>
+          <li><img src="../Image/logo_HCMCUTE.png"
+              style="height: 90px; margin: 50px;" alt="logo_HCMCUTE"></li>
+
+          <li><a href="../Home/index.html">Trang chủ</a></li>
+          <li><a href="../Alarm/alarm.html">Cảnh báo</a></li>
+          <li><a onclick="exportToExcel()">Xuất</a></li>
+          <li><a style="background-color: #0668b8; border-radius: 10px; color: white; padding: 10px;" href="./setting.html">Cài đặt</a></li>
+          <li><a href="../Login/login.html">Đăng xuất</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <form>
+          <label for="low-temp">Nhiệt độ thấp nhất (°C):</label>
+          <input type="number" id="low-temp" name="low-temp" placeholder="Nhập nhiệt độ thấp nhất"><br><br>
+
+          <label for="high-temp">Nhiệt độ cao nhất (°C):</label>
+          <input type="number" id="high-temp" name="high-temp" placeholder="Nhập nhiệt độ cao nhất"><br><br>
+
+          <label for="temp">Nhiệt độ (°C):</label>
+          <input type="number" id="temp" name="temp" placeholder="Nhập thời gian đo"><br><br>
+
+          <label for="measurement-time">Thời gian đo (phút):</label>
+          <input type="number" id="measurement-time" name="measurement-time" placeholder="Nhập thời gian đo"><br><br>
+
+          <input type="submit" value="Cập nhật">
+        </form>
+      </div>
+    </div>
+    <!-- Thanh footer -->
+    <footer>&copy; HỆ THỐNG GIÁM SÁT NHIỆT ĐỘ</footer>
+  </body>
+</html>
+t

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu_Bottom_Nav.Home_Fragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar_Home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_Home"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/blue"
+            android:elevation="4dp"
+            app:title="TEMPERATURE IOT"
+            app:titleTextColor="@color/white">
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appBar_Home"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Thời gian cập nhật: 10:41 - 30/05/2023"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <com.github.lzyzsd.circleprogress.ArcProgress
+        android:id="@+id/arc1"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_below="@id/text_time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:arc_angle="240"
+        app:arc_bottom_text="Nhiệt độ"
+        app:arc_bottom_text_size="30dp"
+        app:arc_finished_color="#F8171F"
+        app:arc_max="200"
+        app:arc_progress="30"
+        app:arc_stroke_width="25dp"
+        app:arc_suffix_text="°C"
+        app:arc_suffix_text_size="23dp"
+        app:arc_text_color="#F8171F"
+        app:arc_text_size="40sp"
+        app:arc_unfinished_color="@color/gray"
+        tools:ignore="MissingClass" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/arc1"
+        android:id="@+id/linear1"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chế độ rã đông"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textOff="điện"
+            android:textOn="gas"
+            android:thumb="@drawable/thumb"
+            app:showText="true"
+            app:track="@drawable/track" />
+
+        <TextView
+            android:id="@+id/text_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Đơn vị"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textOff="°C"
+            android:textOn="°K"
+            android:thumb="@drawable/thumb"
+            app:showText="true"
+            app:track="@drawable/track" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:text="Biểu đồ nhiệt độ (°C)"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChart_temp"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_below="@id/text_4"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

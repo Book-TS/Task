@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu_Bottom_Nav.Setting_Fragment">
+
+    <TextView
+        android:id="@+id/txt_Setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:padding="10dp"
+        android:text="Cài đặt"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_temp_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_Setting"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"
+        android:padding="5dp"
+        android:text="Nhiệt độ thấp nhất (°C)"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/temp_min"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_Setting"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/txt_temp_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_temp_min"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:padding="5dp"
+        android:text="Nhiệt độ cao nhất (°C)"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/temp_max"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temp_min"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/txt_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_temp_max"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:padding="5dp"
+        android:text="Nhiệt độ đặt (°C)"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/temp"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temp_max"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/txt_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:padding="5dp"
+        android:text="Thời gian đo (phút)"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/temp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/bt_update"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@id/time"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="110dp"
+        android:backgroundTint="@color/blue"
+        android:padding="7dp"
+        android:text="Cập nhật"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_history"
+        android:tint="@color/white"
+        app:backgroundTint="@color/blue"
+        app:fabCustomSize="65dp"
+        app:fabSize="normal"
+        app:maxImageSize="40dp" />
+
+
+</RelativeLayout>

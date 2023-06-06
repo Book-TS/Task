@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+  </head>
+  <body>
+    <div class="layout_1">
+      <!-- Thanh menu dọc -->
+      <div class="sidebar">
+        <ul>
+          <li><img src="../Image/logo_HCMCUTE.png"
+              style="height: 90px; margin: 50px;" alt="logo_HCMCUTE"></li>
+
+          <li><a style="background-color: #0668b8; border-radius: 10px; color: white; padding: 10px;" href="./index.html">Trang chủ</a></li>
+          <li><a href="../Alarm/alarm.html">Cảnh báo</a></li>
+          <li><a onclick="exportToExcel()">Xuất</a></li>
+          <li><a href="../Setting/setting.html">Cài đặt</a></li>
+          <li><a href="../Login/login.html">Đăng xuất</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="layout_2">
+          <h1>Kho lạnh</h1>
+          <div class="temperature">25 °C</div>
+          <div class="switch-container">
+            <p>Đơn vị °K</p>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="main-content">
+          <h1 style="margin-top: 10px; width: 500px; text-align: center;">Biểu đồ nhiệt độ theo thời gian</h1>
+          <canvas id="chartDO" class="chart"></canvas>
+        </div>
+      </div>
+    </div>
+    <!-- Thanh footer -->
+    <footer>&copy; HỆ THỐNG GIÁM SÁT NHIỆT ĐỘ</footer>
+  </body>
+
+  <script>
+    const yValues = [50,60,70,80,90,100,110,120,130,140,150];
+    const xValues = [7,8,8,9,9,9,10,11,14,14,15];
+    
+    new Chart("chartDO", {
+      type: "line",
+      data: {
+        labels: xValues,
+        datasets: [{
+          fill: false,
+          lineTension: 0,
+          backgroundColor: "rgba(0,0,255,1.0)",
+          borderColor: "rgba(0,0,255,0.1)",
+          data: yValues
+        }]
+      },
+      options: {
+        legend: {display: false},
+        scales: {
+          // yAxes: [{ticks: {min: 6, max:16}}],
+        }
+      }
+    });
+
+
+    
+    var yourDataArray = [
+      { Name: 'John', Age: 30, City: 'New York' },
+      { Name: 'Jane', Age: 25, City: 'London' },
+      { Name: 'Tom', Age: 35, City: 'Paris' }
+    ];
+
+    function exportToExcel() {
+      // Tạo workbook mới
+      var workbook = XLSX.utils.book_new();
+      
+      // Tạo worksheet mới
+      var worksheet = XLSX.utils.json_to_sheet(yourDataArray);
+      
+      // Thêm worksheet vào workbook
+      XLSX.utils.book_append_sheet(workbook, worksheet, "Sheet 1");
+      
+      // Xuất file Excel
+      XLSX.writeFile(workbook, "data.xlsx");
+    }
+
+    </script>
+</html>
+t
